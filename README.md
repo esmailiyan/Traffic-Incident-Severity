@@ -41,7 +41,7 @@ The project frames incident severity (`y`) as a multiclass classification task. 
 ## Getting started
 
 ```bash
-git clone https://github.com/<your-username>/traffic-incident-severity-mining.git
+git clone https://github.com/esmailiyan/traffic-incident-severity-mining.git
 cd traffic-incident-severity-mining
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
