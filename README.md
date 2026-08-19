@@ -24,10 +24,11 @@ The project frames incident severity (`y`) as a multiclass classification task. 
 ```text
 .
 ├── code/
-│   └── main.ipynb      # Complete analysis and modelling workflow
+│   ├── main.ipynb      # Complete analysis and modelling workflow
+│   └── notebook.ipynb  # Kaggle-ready version with original column names
 ├── data/
 │   ├── data.csv        # Training data
-│   └── group_06_test.csv # Additional labelled test data
+│   └── test.csv        # Additional labelled test data
 ├── docs/
 │   ├── Report.pdf      # Project report
 │   ├── Project_Description_DM4042_Update1.pdf
@@ -50,6 +51,8 @@ jupyter notebook code/main.ipynb
 
 Run the notebook from top to bottom. Generated artefacts are written to `results/`; the notebook reads its inputs from `data/` using relative paths.
 
+For the Kaggle version, upload `code/notebook.ipynb`, add the [US Accidents (2016–2023)](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents) dataset as an input, and run the notebook in Kaggle.
+
 ## Methodology
 
 1. **Data understanding & cleaning** — identify column roles and resolve quality issues.
@@ -58,6 +61,12 @@ Run the notebook from top to bottom. Generated artefacts are written to `results
 4. **Leakage-safe preparation** — split first; fit all preprocessing only on training data.
 5. **Feature selection & tuning** — use stratified cross-validation and macro F1.
 6. **Final evaluation** — compare the held-out test performance and inspect the confusion matrix.
+
+## Model comparison
+
+![Comparison of accuracy, macro precision, macro recall, and macro F1 across the evaluated models](results/model_metrics_comparison.png)
+
+The chart compares five classifiers on the held-out test set. **Decision Tree** achieved the best macro F1 score (0.709) and accuracy (0.870), so it was selected as the final model. Macro F1 is especially useful here because it gives every severity class the same importance.
 
 ## Notes
 

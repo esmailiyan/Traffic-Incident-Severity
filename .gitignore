@@ -1,4 +1,5 @@
-results/
+results/*
+!results/model_metrics_comparison.png
 venv/
 .ipynb_checkpoints/
 .DS_Store
