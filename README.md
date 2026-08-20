@@ -50,7 +50,7 @@ jupyter notebook code/main.ipynb
 
 Run the notebook from top to bottom. Generated artefacts are written to `results/`; the notebook reads its inputs from `data/` using relative paths.
 
-For the Kaggle version, upload `code/notebook.ipynb`, add the [US Accidents (2016–2023)](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents) dataset as an input, and run the notebook in Kaggle.
+Kaggle dataset: [US Accidents (2016–2023)](https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents)
 
 ## Methodology
 
