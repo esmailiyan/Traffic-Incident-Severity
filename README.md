@@ -24,8 +24,7 @@ The project frames incident severity (`y`) as a multiclass classification task. 
 ```text
 .
 ├── code/
-│   ├── main.ipynb      # Complete analysis and modelling workflow
-│   └── notebook.ipynb  # Kaggle-ready version with original column names
+│   └── main.ipynb      # Complete analysis and modelling workflow
 ├── data/
 │   ├── data.csv        # Training data
 │   └── test.csv        # Additional labelled test data
